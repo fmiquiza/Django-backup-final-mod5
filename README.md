@@ -24,20 +24,19 @@ GenericAPIView
 
 1. Clonar el repositorio
    git clone https://github.com/fmiquiza/Django-backup-final-mod5.git
+
 2. Instalar las dependencias
-   virtualenv env
+   cd calendarapp #INGRESAR al folder del proyecto.
+    python3 -m venv venv
     source venv/bin/activate
-    pip3 install Django
-    django-admin start calendarapp
+    pip3 install -r requirements.txt
 3. Levantar el servidor
    Python3 manage.py migrate
    python3 manage.py createsuperuser
    Python3 manage.py runserver
 
 TROUBBLESHOOTING
-- Si no se encuentra el archivo requirements.txt, ejecutar pip3 freeze > requirements.txt
-
-Si existiera algún error de dependencias/paquetes, instalarlos manualmente:
+- Si no se encuentra el archivo requirements.txt o  Si existiera algún error de dependencias/paquetes, instalarlos manualmente:
 
 pip install djangorestframework
 pip install djangorestframework-oauth
